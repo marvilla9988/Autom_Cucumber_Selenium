@@ -1,6 +1,7 @@
 package Runner;
 
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -13,6 +14,7 @@ import org.junit.runner.RunWith;
         //  plugin = {"com.cucumber.listener.ExtentCucumber:target/cucumber-reports/report.html"}, //reporte de graficos
         // para generar un archivo JSON con todos lo necesario para modelar nuestro HTML
         //plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports.json"},
+        //plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-report.json"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-report.json"},
         monochrome = true,
         tags = "@Test"
